@@ -34,6 +34,22 @@ namespace Jira_Mission
                 }
             }
         }
+        public void SelectionSort(int[] bigNum)
+        {
+            for(int i = 0;i < bigNum.Length-1;i++)
+            {
+                int temp = bigNum[i];
+                for(int j = i;j < bigNum.Length-1 -1;j++)
+                {
+                    if (bigNum[j] < temp)
+                    {
+                        temp = bigNum[j];
+                        bigNum[j] = bigNum[i];
+                    }
+                }
+                bigNum[i] = temp;
+            }
+        }
 
     }
 }
