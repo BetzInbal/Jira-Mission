@@ -39,7 +39,7 @@ namespace Jira_Mission
             for(int i = 0;i < bigNum.Length-1;i++)
             {
                 int temp = bigNum[i];
-                for(int j = i;j < bigNum.Length-1 -1;j++)
+                for(int j = i+1;j < bigNum.Length-1 -1;j++)
                 {
                     if (bigNum[j] < temp)
                     {
